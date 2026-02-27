@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>USER DATA</title>
+</head>
+<body>
+    <h1>Stored Users</h1>
+    {% if users %}
+    <ul>
+        {% for users in users %}
+          <li>{{user[0]}}({{user[1]}})</li>
+          {% endfor %}
+          
+    </ul>
+    {% else %}
+    <p>NO users found.</p>
+    {% endif %}
+    <a href="/">Add another user</a>
+</body>
+</html>
